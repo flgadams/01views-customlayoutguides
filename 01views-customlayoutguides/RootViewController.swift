@@ -86,12 +86,12 @@ class RootViewController: UIViewController {
         }
         // the guide heights equal each other
         
+        // THIS FORCES ALL LGs TO HAVE SAME HEIGHT
         let h = guides[0].heightAnchor
         for g in guides.dropFirst() {
             g.heightAnchor.constraint(equalTo: h).isActive = true
         }
     }
-
 
 }
 
